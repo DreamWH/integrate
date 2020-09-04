@@ -1,22 +1,26 @@
-
 spring:
   datasource:
     password: Huang@970226
     url: jdbc:mysql://192.168.52.128:3306/test_home
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-  redis:
-    port: 6379
-    host: 192.168.52.128
-    timeout: 5000
-    database: 0
-  rabbitmq:
-    host: 192.168.52.128
-    username: guest
-    password: guest
-
-logging:
-  level:
-    com.example.demo.mapper: debug
+  elasticsearch:
+    jest:
+      uris: http://192.168.52.128:9200/
+#  redis:
+#    port: 6379
+#    host: 192.168.52.128
+#    timeout: 5000
+#    database: 0
+#  rabbitmq:
+#    host: 192.168.52.128
+#    username: guest
+#    password: guest
+#
+#logging:
+#  level:
+#    com.example.demo.mapper: debug
 mybatis:
   config-location: classpath:mybatis/mybatis-config.xml
+
+
